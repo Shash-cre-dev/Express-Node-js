@@ -1,0 +1,22 @@
+// CommonJS, every file is module (by default)
+// Modules - Encapsulated Code (only share Miniumum)
+
+Every file in node is a module by itself
+one can store diffent parts of a program in different files (modules) to  increase reusability
+
+const john = 'john';
+const peter = 'peter';
+
+const sayHi = (name) => {
+    console.log(`Hello There ${name}`)
+}
+
+sayHi('susan'); //for an input string
+sayHi(john);    //for a variable
+sayHi(peter);   //for a variable
+
+
+>node app.js (or) node app
+Hello There susan
+Hello There john
+Hello There peter
