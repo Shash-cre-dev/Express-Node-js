@@ -1,0 +1,34 @@
+What is NodeJS?
+
+1. Environment to run JS outside Browser
+2. Built on to Chrome V8 JS Engine
+
+Browser JS v/s Node.JS
+DOM                      No DOM
+Window                   No Window
+Interactive Apps         Server Side Apps
+No Filesystem            Filesystem
+Fragmentation            Versions
+ES6 Modules              CommonJS
+
+node --version (in Terminal) to check latest version of Node Installed
+
+node app.js (in Terminal) to run the node app named app.js
+
+IN app.js
+
+const amount = 12
+if(amount < 10){
+    console.log('small number');
+}
+else{
+    console.log('large number');
+}
+
+console.log(`hey it's my first node app`);
+
+IN Terminal
+
+>node app.js
+large number
+hey it's my first node app
