@@ -50,6 +50,7 @@ const _ = require('lodash');
 const items = [1, [2, [3, [4]]]]
 const newItems = _.flattenDeep(items)
 console.log(newItems) // [ 1, 2, 3, 4 ]
+console.log("Hello World")
 
 // WHY package.json is IMPORTANT for sharing code with Developers
 
@@ -69,3 +70,42 @@ console.log(newItems) // [ 1, 2, 3, 4 ]
 // for restarting our application
 // nodemon can be used during development
 // for dependencies in production - dependencies
+
+// under scripts in package.json, you can set up commands like 
+// add start property 
+// "start" : "node app.js"
+// This allows to run the app.js without typing node app.js and by only typing npm start or npm run start
+
+// "dev":"nodemon app.js"
+// runs the app.js with dev dependency with npm run dev
+
+// If you don't want to run - npm run dev
+// change the start porperty to "start": "nodemon app.js" and do npm start
+
+// UNINSTALLING THE PACKAGE
+// Two ways 
+// 1) npm uninstall <packageName>
+// 2) Nuclear Approach - delete node_modules and package-lock.json, if you want 
+
+// Note: you can still install the deleted package via npm i as it is saved in package.json under dependencies.
+// To completely remove, clear the dependencies property under package.json for that specific package
+
+// INSTALLING GLOBAL DEPENDENCY
+
+// Installing nodemon globally (in Windows Terminal)
+// Now nodemon can be used to run any js file in any project
+
+
+// NPX
+// npx - is a package runner tool that comes with npm5.2+
+// more efficient in installing packages without installing them globally.
+
+// package-lock.json
+// stores the version of all the dependencies required by a package to work efficiently
+// so that developers don't face any issues with the version of the dependencies required to
+// run the project.
+
+// Version -  
+// Eg - 10.4.20 - 10 - represents a significant change, if it becomes 11- it means a major change has occured
+//              - 4  - represents a minor change, it's backaward compatible - it it changes to 5, 5 is still usable
+//              - 20 - patch number or update
