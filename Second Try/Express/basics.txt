@@ -1,0 +1,35 @@
+How we exchange data on the Web?
+
+Everytime we open a web browser and typing in an url or web address
+, we are actually performing a request to the server which is responsible
+for serving those resources. Server sends you the response, similar for data
+
+It is done using http protocol and is known as HTTP messages. 
+The user (Client) sends an http request message and the server sends the
+http response. That's how we share data on the web.
+
+Servers are computers who's main job is to make the resources available.
+There are some differences like servers don't have GUI.
+
+HOW IS HTTP MESSAGE STRUCTURED?
+
+HTTP Methods
+what do you want to do with the resources
+GET    - Read   Data 
+POST   - Insert Data
+PUT    - Update Data
+DELETE - Delete Data
+
+Request Message
+GET - the default request that the browser performs
+URL - web address
+Headers - optional, meta info about the request (key-value pair)
+Body(Payload) - optional, if you want to add a resource to data
+
+Response Message
+Status Code - it signals what is the result of the request like 200, 404
+Headers - optional, meta info about the response (key-value pair)
+Body - HTML or JSON 
+Status Text -  
+
+Remote Address(IP)
