@@ -1,0 +1,21 @@
+Express.js
+
+API VS SSR
+
+API - JSON
+SEND DATA
+RES.JSON()
+
+SSR - TEMPLATE
+SEND TEMPLATE
+RES.RENDER()
+
+
+API in Express.js
+We setup an http interface to interact with our data.
+Data is sent using JSON, Javascript Object Notation 
+To send response we use res.json()
+
+SSR in Express.js
+Here we setup a template that sends an entire HTML, CSS and
+Javascript ourselves. We do that res.render()
