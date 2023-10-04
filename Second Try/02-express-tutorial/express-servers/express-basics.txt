@@ -1,0 +1,8 @@
+Static Assets
+The files which Server does not changes
+we can place all the static assests in folders named static or public
+can change the name to anything
+
+Eg: Images, CSS File, JS File
+
+Server Side Rendering - Dynamic

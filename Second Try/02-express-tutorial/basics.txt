@@ -35,3 +35,8 @@ Status Text -
 Remote Address(IP)
 
 Express is built upon Node or simple HTTP Module
+Express is a fast, minimalist web framework for Node.js
+
+// npm install express --save or npm install express
+// For specific version like 4.17.1
+// npm install express@4.17.1 --save
